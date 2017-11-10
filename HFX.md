@@ -35,12 +35,14 @@
 #### git pull
 * 说人话大概就是“同步”“更新”的意思吧
 * 当push前如果远程仓库有更新，那么push操作就会被驳回，这是时要先pull一下再进行push
+---
 ### 11.08
 #### 静态网站
 * 通常以.html结尾。用户无论以何种方式请求，返回的资源信息都是相同的。
 #### 动态网站
 * 根据用户提交信息的不同返回不同的信息（asp，php，jsp）。当用户请求这些资源时，服务器端返回的信息会因用户提交的信息的不同而变化，在服务器想客户端传送网页内容时，服务器首先将这些程序处理成客户端可以查看的方式，然后再将数据发送到客户端，因此，表现为一种动态的响应过程。
 * SQL注入（SQL Injection）：此风险只存在于动态页面中。
+---
 ### 11.09
 * 一个系统从无到有的过程：可行性分析-需求分析-设计-实现-部署-运维
 * 需求分析：
@@ -52,19 +54,20 @@
 3. 写用例规约（Usecase Specification）：即，写每一个用例的**事件流**[主事件流and辅助事件流]
 4. 写补充规约：写非功能需求
 5. 术语表（Glossary）：写本系统会用到的词（生僻的词）
+---
 ### 11.10
 * 之前由于一些我不明白的原因出现了代码冲突情况导致文件不能成功push，出现了以下提示：  
-` error: Your local changes to the following files would be overwritten by merge:
-        XIAOMO/HFX.md
+` error: Your local changes to the following files would be overwritten by merge:  
+XIAOMO/HFX.md  
 Please, commit your changes or stash them before you can merge. `  
 Google之，得到以下方法:  
 ** 若希望保留生产服务器上所做改动，仅仅并入新配置项，方法如下：  
 ` git stash ` 保存当前工作进度（储存本地修改）  
 ` git pull ` 更新  
 ` git stash pop ` 还原暂存内容  
-可以使用git diff -w +文件名 来确认代码自动合并情况
-
-** 若希望用代码库中的文件完全覆盖本地工作版本.，方法如下:
-` git reset `
-` git pull `
-*END
+可以使用git diff -w +文件名 来确认代码自动合并情况  
+** 若希望用代码库中的文件完全覆盖本地工作版本.，方法如下:  
+` git reset `  
+` git pull `  
+* END
+---
