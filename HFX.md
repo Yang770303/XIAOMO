@@ -11,15 +11,15 @@
 * 没啥好说，就是想吐槽一下GUI真难看
 * 下载地址：https://git-scm.com/downloads
 #### git clone
-* 从远程主机克隆一个版本库，然后在本机生成一个目录，实现远程操作。
+* 从远程主机克隆一个版本库，然后在本机生成一个目录，实现远程操作。  
 ` $ git clone <版本库的网址> <本地目录名> `
 * 如果不写本地目录名则直接克隆在Git的安装目录下
 #### cd <仓库名>
 * 刚开始时直接在MINGW64下直接对仓库进行操作，然后就GG了
-* 应先输入命令`cd <仓库名>`进入到对应仓库，再进行操作
+* 应先输入命令` cd <仓库名> `进入到对应仓库，再进行操作
 #### git add
-* git add跟踪一个文件，如果你给已跟踪文件1.jpg改名成2.jpg，可以输入
-` $ git add 2.jpg `
+* git add跟踪一个文件，如果你给已跟踪文件1.jpg改名成2.jpg，可以输入  
+` $ git add 2.jpg `  
 此时2.jpg进入了暂存区（此时1.jpg还没被移除）
 #### git rm
 * git rm 移除指定文件
@@ -73,4 +73,19 @@ Google之，得到以下方法:
 ---
 ### 11.11-11.12
 * 周末都用来肝字幕了！！！
+---
+### 11.13
+* 今天踩过的坑： 
+* 在安装完Kali Linux的时候忘记了用户名密码（其实是不知道用户名是root，以为是自己命名的Username）于是一直密码错误进不到主页面。同时想到了一个问题，如果真的忘了密码该怎么办呢？然后得到以下方法：
+#### Kali Linux密码重置
+1. 启动Kali Linux系统后，出现   
+` Kali GUN/Linux `   
+` *Advanced options for Kali GUN/Linux `   
+  两个选项时，选择第二个并按E键进入编辑模式   
+  ![GitHub](http://a3.qpic.cn/psb?/V11bbUf720k94q/.DxnUthm*5YBpOq6GL7qPBVswRsVs7vjNJfh2mwPvJc!/b/dI4BAAAAAAAA&bo=gQLeAYEC3gEDByI!&rf=viewer_4)
+2. 找到以下代码，把ro改为rw，在.gz后面写上init=/bin/bash   
+![GitHub](http://a3.qpic.cn/psb?/V11bbUf720k94q/8sU.MYTVk*5fYo6Sz57dXu2mgJO0tJCYxdjOWlWEUSo!/b/dOAAAAAAAAAA&bo=SwIiAEsCIgADACU!&rf=viewer_4)
+3. 改完后按F10或CTRL+X继续启动，出现以下画面，输入新密码。   
+![GitHub](http://a2.qpic.cn/psb?/V11bbUf720k94q/ZPSfHQDW4jEfeuwlGYBsgf5rzjFPtTcAtel9rcaffjA!/b/dOIAAAAAAAAA&bo=5QJdAeUCXQERADc!&rf=viewer_4)
+* 此时就可以使用新密码登录了。（登录到主页面中间差不多有一分钟的黑屏害我以为是我镜像的问题，硬是重启了好几次）
 ---
