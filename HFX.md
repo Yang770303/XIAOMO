@@ -89,3 +89,5 @@ Google之，得到以下方法:
 ![GitHub](http://a2.qpic.cn/psb?/V11bbUf720k94q/ZPSfHQDW4jEfeuwlGYBsgf5rzjFPtTcAtel9rcaffjA!/b/dOIAAAAAAAAA&bo=5QJdAeUCXQERADc!&rf=viewer_4)
 * 此时就可以使用新密码登录了。（登录到主页面中间差不多有一分钟的黑屏害我以为是我镜像的问题，硬是重启了好几次）
 ---
+### 11.14
+* test
