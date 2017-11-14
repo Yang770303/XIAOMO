@@ -95,6 +95,7 @@ Google之，得到以下方法:
 ` print("Hello, World!"); `   
 而不是   
 ` print "Hello, World!"; `
+##### --------手动分割线-----------
 #### 提交修改过内容的文件到远程仓库
 * 之前一直处于只会修改文件名的状态，在尝试修改md文件并提交到远程仓库时发现，用修改名字的方法提交会出现代码冲突，然后今天来尝试修改md文件的内容并提交。（所以我之前其实一直是在github网页上直接修改的）
 * 第一步，Git status查看状态，信息表明当前目录下没有出现任何处于未跟踪的**新文件**。   
@@ -108,4 +109,5 @@ Google之，得到以下方法:
 上图则表示文件成功进入了暂存盘（但还没有commit）
 * 最后一步commit push，完成啦~   
 ![GitHub](http://a3.qpic.cn/psb?/V11bbUf720k94q/6ESKVUPLtK0hiMr9WJLREy.LMUN7.HYDEIkAcUVNmeY!/b/dPIAAAAAAAAA&bo=gAIKAQAAAAADAKw!&rf=viewer_4)
+* 总结：emm...其实跟改名字的方法还是一样的嘛...但是再写一遍能对命令有更深刻的印象，还有我以后一定要常用的命令就是git status！很多时候都是因为我不清楚文件的状态就直接执行下一条命令而造成的代码冲突，所以，多用git status啊！
 ---
