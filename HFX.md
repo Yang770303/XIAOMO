@@ -90,4 +90,22 @@ Google之，得到以下方法:
 * 此时就可以使用新密码登录了。（登录到主页面中间差不多有一分钟的黑屏害我以为是我镜像的问题，硬是重启了好几次）
 ---
 ### 11.14
-* test
+* 今天犯的傻：
+* Python 3.0+版本把print作为一个内置函数，输出时要写的代码应该是   
+` print("Hello, World!"); `   
+而不是   
+` print "Hello, World!"; `
+#### 提交修改过内容的文件到远程仓库
+* 之前一直处于只会修改文件名的状态，在尝试修改md文件并提交到远程仓库时发现，用修改名字的方法提交会出现代码冲突，然后今天来尝试修改md文件的内容并提交。（所以我之前其实一直是在github网页上直接修改的）
+* 第一步，Git status查看状态，信息表明当前目录下没有出现任何处于未跟踪的**新文件**。   
+![GitHub](http://a1.qpic.cn/psb?/V11bbUf720k94q/DGiP8p8VRW78Bsiq96XvAnMh3e4JsgBp.GgglZ0XqTU!/b/dPMAAAAAAAAA&bo=*AF2AAAAAAADB6k!&rf=viewer_4)   
+旧文件我们可以用git ls-files来查看所有已跟踪的**文件**   
+![GitHub](http://a1.qpic.cn/psb?/V11bbUf720k94q/fuEOTECty5lCvJEREhnY018N1zgVUMn6AvwGf7ms87c!/b/dD4BAAAAAAAA&bo=EAJLAAAAAAADAHw!&rf=viewer_4)   
+* 第二步，修改md文件里的内容，修改完成后，git status查看状态：   
+![GitHub](http://a2.qpic.cn/psb?/V11bbUf720k94q/2x1odjso.CnNL.syY*T4hKXJNHWlBLJDMsUibZTkYt4!/b/dD8BAAAAAAAA&bo=rALYAAAAAAADAFM!&rf=viewer_4)   
+如图表示改变的东西未提交成功，再次git add，然后git status   
+![GitHub](http://a2.qpic.cn/psb?/V11bbUf720k94q/M0OdsTa3MqsqAwLRhpUbvCZb9V05dZwytwtKcrjhH5I!/b/dOIAAAAAAAAA&bo=GAKqAAAAAAADAJU!&rf=viewer_4)   
+上图则表示文件成功进入了暂存盘（但还没有commit）
+* 最后一步commit push，完成啦~   
+![GitHub](http://a3.qpic.cn/psb?/V11bbUf720k94q/6ESKVUPLtK0hiMr9WJLREy.LMUN7.HYDEIkAcUVNmeY!/b/dPIAAAAAAAAA&bo=gAIKAQAAAAADAKw!&rf=viewer_4)
+---
